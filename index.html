@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Todo List</h1>
+  <div class="limiter">
+    <!-- Insert -->
+    <div class="insert">
+      <input type="text" id="js-insert" placeholder="What needs to be done ?">
+    </div>
+
+    <div class="bar" id="js-bar">
+      <!-- Total -->
+      <div class="">
+        <input type="checkbox" id="js-toggle-all" class="toggle">
+      </div>
+
+      <!-- Filter -->
+      <div class="">
+        <ul class="filter" id="js-filters">
+          <li>
+            <a href="#/all" class="button selected">
+              All <span class="total" id="js-total"></span>
+            </a>
+          </li>
+          <li><a href="#/active" class="button">Active</a></li>
+          <li><a href="#/completed" class="button">Completed</a></li>
+        </ul>
+      </div>
+
+      <!-- Clear completed -->
+      <div class="">
+        <button class="button button--clear" id="js-clear-completed">Clear Completed</button>
+      </div>
+    </div>
+
+    <!-- Item list -->
+    <div class="">
+      <ul class="list" id="js-list"></ul>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/polyfills.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
